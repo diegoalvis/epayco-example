@@ -95,6 +95,7 @@ function PayButton()  {
         data-epayco-confirmation='' 
         data-epayco-button='https://369969691f476073508a-60bf0867add971908d4f26a64519c2aa.ssl.cf5.rackcdn.com/btns/boton_carro_de_compras_epayco4.png'> 
     </script> 
+    
 </form> 
     // <button onClick={handlePay}>
     //   Demo pay button
