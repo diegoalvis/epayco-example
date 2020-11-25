@@ -9,7 +9,7 @@ const useScript = url => {
     const url = 'https://checkout.epayco.co/checkout.js';
   
     const script = document.createElement('script');
-    script.src = proxyurl + url;
+    script.src =  url;
     script.async = true;
     script.setAttribute('data-epayco-key', '65afb5be48a6a50793901a14bc038c2f');
     script.setAttribute('class', 'epayco-button');
