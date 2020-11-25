@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 
 
-const useScript = url => {
+function epaycoScript() {
 
 
   useEffect(() => {
-    const proxyurl = "https://cors-anywhere.herokuapp.com/";  
+    
     const url = 'https://checkout.epayco.co/checkout.js';
   
     const script = document.createElement('script');
@@ -32,7 +32,7 @@ const useScript = url => {
     return () => {
       document.body.removeChild(script);
     }
-  }, [url]);
+  });
 };
 
-export default useScript;
+export default epaycoScript;
