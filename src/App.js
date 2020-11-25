@@ -4,7 +4,8 @@ import epaycoScript from './epaycoScript';
 
 function App() {
 
-  epaycoScript();
+  const amount = 25000;
+  epaycoScript(amount);
   
   return (
     <div className="App">

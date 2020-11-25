@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
 
-function epaycoScript() {
+function epaycoScript(amount) {
 
 
   useEffect(() => {
@@ -13,9 +13,9 @@ function epaycoScript() {
     script.async = true;
     script.setAttribute('data-epayco-key', '65afb5be48a6a50793901a14bc038c2f');
     script.setAttribute('class', 'epayco-button');
-    script.setAttribute('data-epayco-amount', '142800');
-    script.setAttribute('data-epayco-tax', '22800');
-    script.setAttribute('data-epayco-tax-base', '120000');
+    script.setAttribute('data-epayco-amount', amount);
+    script.setAttribute('data-epayco-tax', '0');
+    script.setAttribute('data-epayco-tax-base', '0');
     script.setAttribute('data-epayco-name', 'Solicitud de anfitrion');
     script.setAttribute('data-epayco-description', 'Solicitud de anfitrion');
     script.setAttribute('data-epayco-currency', 'cop');
